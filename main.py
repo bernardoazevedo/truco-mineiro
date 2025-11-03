@@ -396,7 +396,7 @@ while not duplaVencedora: # loop de mãos
                         time.sleep(2 / VELOCIDADE_DO_JOGO)
                     else:
                         print(f"\n{proximoJogador.nome}, você aceita?")
-                        jogadorDaVez.mao.printaCartas(False)
+                        proximoJogador.mao.printaCartas(False)
                         print(f"\n[Sim] [Não] [Quero {valorDaRodada + 2 + 2}!]")
                         print(f"  1     2        3")
                         respostaTruco = input("Opção: ")
