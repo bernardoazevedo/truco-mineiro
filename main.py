@@ -347,7 +347,7 @@ while not duplaVencedora: # loop de mãos
 
         if len(cartasDaRodada) > 0:
             for carta in cartasDaRodada:
-                print(f"{carta["jogador"].nome}: {carta["carta"].__str__()}")
+                print(f"{carta['jogador'].nome}: {carta['carta'].__str__()}")
 
         print("\n" + jogadorDaVez.nome)
         
@@ -466,7 +466,7 @@ while not duplaVencedora: # loop de mãos
 
             print("\n\nE quem levou a rodada foi...")
             print(cartaMaisForte["jogador"].nome)
-            print(f"Com a carta: {cartaMaisForte["carta"]}")
+            print(f"Com a carta: {cartaMaisForte['carta']}")
             time.sleep(3 / VELOCIDADE_DO_JOGO)
 
             # resetando os contadores
